@@ -1,0 +1,98 @@
+# ================================
+# Swift / Xcode
+# ================================
+
+# Build output
+build/
+DerivedData/
+*.xcarchive
+*.ipa
+
+# Xcode user-specific settings
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+*.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ================================
+# Dart / Flutter
+# ================================
+
+# Dart tool cache
+.dart_tool/
+.pub-cache/
+.pub/
+
+# Flutter build output
+build/
+
+# Flutter/Dart package config
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+
+# Flutter generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+
+# Android (if any Flutter project is included)
+**/android/.gradle/
+**/android/local.properties
+**/android/key.properties
+**/android/app/google-services.json
+**/android/captures/
+
+# iOS (if any Flutter project is included)
+**/ios/Pods/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/.symlinks/
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.iws
+
+# VS Code
+.vscode/
+
+# Coverage
+coverage/
+lcov.info
+
+# Environment / secrets
+*.env
+*.env.*
+secrets.json
+google-services.json
+GoogleService-Info.plist
