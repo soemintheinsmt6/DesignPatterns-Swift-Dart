@@ -11,55 +11,59 @@ import Foundation
 
 class DVDPlayer {
     func on() {
-        print("DVD Player is ON")
+        print("DVDPlayer: Turning on...")
     }
     
     func play(movie: String) {
-        print("DVD Player is playing \(movie)")
+        print("DVDPlayer: Playing \"\(movie)\".")
     }
     
     func stop() {
-        print("DVD Player is Stopped")
+        print("DVDPlayer: Stopping playback.")
+    }
+    
+    func eject() {
+        print("DVDPlayer: Ejecting disc.")
     }
     
     func off() {
-        print("DVD Player is OFF")
+        print("DVDPlayer: Turning off...")
     }
 }
 
 class Projector {
     func on() {
-        print("Projector is ON")
+        print("Projector: Turning on...")
     }
     
-    func setInput(_ dvdPlayer: DVDPlayer) {
-        print("Setting input to DVD Player")
+    func setInput(_ input: String) {
+        print("Projector: Setting input to \(input).")
     }
     
-    func display() {
-        print("Projector is displaying")
+    func wideScreenMode() {
+        print("Projector: Setting widescreen mode (16:9).")
     }
     
     func off() {
-        print("Projector is OFF")
+        print("Projector: Turning off...")
     }
 }
 
 class SoundSystem {
     func on() {
-        print("Sound System is ON")
+        print("SoundSystem: Turning on...")
     }
     
     func setVolume(_ volume: Int) {
-        print("Setting volume to \(volume)")
+        print("SoundSystem: Setting volume to \(volume).")
     }
     
-    func surroundSound() {
-        print("Surround sound is ON")
+    func setSurroundSound() {
+        print("SoundSystem: Setting surround sound mode.")
     }
     
     func off() {
-        print("Sound System is OFF")
+        print("SoundSystem: Turning off...")
     }
 }
 
@@ -77,23 +81,22 @@ class HomeTheaterFacade {
     }
     
     func watchMovie(_ movie: String) {
-        print("Get ready to watch a movie...")
+        projector.on()
+        projector.wideScreenMode()
+        projector.setInput("DVD")
+        soundSystem.on()
+        soundSystem.setSurroundSound()
+        soundSystem.setVolume(8)
         dvdPlayer.on()
         dvdPlayer.play(movie: movie)
-        projector.on()
-        projector.setInput(dvdPlayer)
-        projector.display()
-        soundSystem.on()
-        soundSystem.setVolume(10)
-        soundSystem.surroundSound()
     }
     
     func endMovie() {
-        print("Shutting down the movie theater...")
         dvdPlayer.stop()
+        dvdPlayer.eject()
         dvdPlayer.off()
-        projector.off()
         soundSystem.off()
+        projector.off()
     }
 }
 
@@ -113,13 +116,17 @@ let homeTheater = HomeTheaterFacade(dvdPlayer: dvdPlayer,
 //
 // MARK: - Domain Entity
 
-class User {
+class User: CustomStringConvertible {
     let id: String
-    var name: String
+    let name: String
     
     init(id: String = UUID().uuidString, name: String) {
         self.id = id
         self.name = name
+    }
+    
+    var description: String {
+        return "User(id: \(id), name: \(name))"
     }
 }
 
@@ -130,17 +137,19 @@ class UserRepository {
     
     func saveUser(_ user: User) -> User {
         store[user.id] = user
-        print("User saved to database with ID: \(user.id)")
+        print("UserRepository: Saved \(user).")
         return user
     }
     
     func getUserById(_ userId: String) -> User? {
-        return store[userId]
+        let user = store[userId]
+        print("UserRepository: Fetched \(user.map { "\($0)" } ?? "null") for id=\(userId).")
+        return user
     }
     
     func deleteUser(_ userId: String) {
         store.removeValue(forKey: userId)
-        print("User with ID \(userId) removed from database")
+        print("UserRepository: Deleted user id=\(userId).")
     }
 }
 
@@ -148,7 +157,7 @@ class UserRepository {
 
 class EmailService {
     func sendWelcomeEmail(to user: User) {
-        print("Sending welcome email to \(user.name)...")
+        print("EmailService: Sent welcome email to \(user.name).")
     }
 }
 
@@ -206,6 +215,10 @@ class UserManagementFacade {
 
 // MARK: - Usage
 
-let facade = UserManagementFacade()
+func userManagementExample() {
+    let facade = UserManagementFacade()
 
-let newUser = facade.createUser(name: "John Doe")
+    let newUser = facade.createUser(name: "John Doe")
+    facade.getUserById(newUser.id)
+    facade.deleteUser(newUser.id)
+}

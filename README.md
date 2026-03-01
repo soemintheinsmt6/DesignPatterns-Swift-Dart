@@ -2,7 +2,7 @@
 
 > 🚧 **Work in Progress** — Patterns are being added incrementally.
 
-A side-by-side reference implementation of classic **Gang of Four (GoF)** design patterns in both **Swift** and **Dart**, useful for comparing idioms across the two languages.
+A language-agnostic reference implementation of **Gang of Four (GoF) design patterns**, with implementations in **Swift and Dart, designed for extensibility and community contributions across additional languages.
 
 ---
 
@@ -62,7 +62,7 @@ DesignPatterns-Swift-Dart/
 | Template Method | | |
 | Visitor | | |
 
-> ✅ = implemented &nbsp;|&nbsp; 🚧 = in progress &nbsp;|&nbsp; _(blank)_ = not started
+> ✅ = implemented &nbsp;|&nbsp; 🚧 = in progress &nbsp;|&nbsp; _(blank)_ = coming soon
 
 ---
 
