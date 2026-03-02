@@ -219,6 +219,6 @@ func userManagementExample() {
     let facade = UserManagementFacade()
 
     let newUser = facade.createUser(name: "John Doe")
-    facade.getUserById(newUser.id)
+    _ = facade.getUserById(newUser.id)
     facade.deleteUser(newUser.id)
 }

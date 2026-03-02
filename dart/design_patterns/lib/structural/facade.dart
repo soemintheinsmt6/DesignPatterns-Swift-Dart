@@ -1,5 +1,3 @@
-// Facade Pattern — Home Theater Example
-//
 // Intent: Provide a simplified interface to a complex subsystem
 // of classes, making it easier to use.
 
