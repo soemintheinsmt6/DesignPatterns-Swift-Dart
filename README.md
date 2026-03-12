@@ -2,7 +2,7 @@
 
 > 🚧 **Work in Progress** — Patterns are being added incrementally.
 
-A language-agnostic reference implementation of **Gang of Four (GoF) design patterns**, with implementations in **Swift and Dart, designed for extensibility and community contributions across additional languages.
+A language-agnostic reference implementation of **Gang of Four (GoF) design patterns**, with implementations in **Swift** and **Dart**, designed for extensibility and community contributions across additional languages.
 
 ---
 
@@ -52,7 +52,7 @@ DesignPatterns-Swift-Dart/
 | Pattern | Swift | Dart |
 |---------|:-----:|:----:|
 | Chain of Responsibility | | |
-| Command | ✅ | |
+| Command | ✅ | ✅ |
 | Iterator | | |
 | Mediator | | |
 | Memento | | |
