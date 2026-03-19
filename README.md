@@ -58,7 +58,7 @@ DesignPatterns-Swift-Dart/
 | Memento | | |
 | Observer | | |
 | State | | |
-| Strategy | | |
+| Strategy | ✅ | ✅ |
 | Template Method | | |
 | Visitor | | |
 
