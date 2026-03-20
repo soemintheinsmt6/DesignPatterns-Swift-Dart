@@ -59,7 +59,7 @@ DesignPatterns-Swift-Dart/
 | Observer | | |
 | State | | |
 | Strategy | ✅ | ✅ |
-| Template Method | | |
+| Template Method | ✅ | ✅ |
 | Visitor | | |
 
 > ✅ = implemented &nbsp;|&nbsp; 🚧 = in progress &nbsp;|&nbsp; _(blank)_ = coming soon
