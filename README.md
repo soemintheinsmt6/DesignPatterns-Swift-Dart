@@ -1,12 +1,12 @@
 # Design Patterns — Swift & Dart
 
-> 🚧 **Work in Progress** — Patterns are being added incrementally.
+> **Work in Progress** — Patterns are being added incrementally.
 
 A language-agnostic reference implementation of **Gang of Four (GoF) design patterns**, with implementations in **Swift** and **Dart**, designed for extensibility and community contributions across additional languages.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 DesignPatterns-Swift-Dart/
@@ -26,7 +26,7 @@ DesignPatterns-Swift-Dart/
 
 ---
 
-## 🗂️ Patterns
+## Patterns
 
 ### Creational
 | Pattern | Swift | Dart |
@@ -56,17 +56,17 @@ DesignPatterns-Swift-Dart/
 | Iterator | | |
 | Mediator | | |
 | Memento | | |
-| Observer | | |
+| Observer | ✅ | ✅ |
 | State | | |
 | Strategy | ✅ | ✅ |
 | Template Method | ✅ | ✅ |
 | Visitor | | |
 
-> ✅ = implemented &nbsp;|&nbsp; 🚧 = in progress &nbsp;|&nbsp; _(blank)_ = coming soon
+> ✅ = implemented &nbsp;|&nbsp; _(blank)_ = coming soon
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Swift
 Requires Xcode or Swift toolchain (Swift 5.5+).
@@ -85,7 +85,7 @@ dart run
 
 ---
 
-## 📖 References
+## References
 
 - [Design Patterns — saturngod.net](https://designpatterns.saturngod.net/cover.html)
 - [Refactoring Guru — Design Patterns](https://refactoring.guru/design-patterns)
