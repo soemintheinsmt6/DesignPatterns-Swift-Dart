@@ -2,7 +2,9 @@
 
 > **Work in Progress** — Patterns are being added incrementally.
 
-A language-agnostic reference implementation of **Gang of Four (GoF) design patterns**, with implementations in **Swift** and **Dart**, designed for extensibility and community contributions across additional languages.
+A language-agnostic reference implementation of **Gang of Four (GoF) design patterns**, with
+implementations in **Swift** and **Dart**, designed for extensibility and community contributions
+across additional languages.
 
 ---
 
@@ -29,38 +31,41 @@ DesignPatterns-Swift-Dart/
 ## Patterns
 
 ### Creational
-| Pattern | Swift | Dart |
-|---------|:-----:|:----:|
-| Singleton | | |
-| Factory Method | | |
-| Abstract Factory | | |
-| Builder | | |
-| Prototype | | |
+
+| Pattern          | Swift | Dart |
+|------------------|:-----:|:----:|
+| Singleton        |       |      |
+| Factory Method   |       |      |
+| Abstract Factory |       |      |
+| Builder          |       |      |
+| Prototype        |       |      |
 
 ### Structural
-| Pattern | Swift | Dart |
-|---------|:-----:|:----:|
-| Adapter | | |
-| Bridge | | |
-| Composite | | |
-| Decorator | | |
-| Facade | ✅ | ✅ |
-| Flyweight | | |
-| Proxy | | |
+
+| Pattern   | Swift | Dart |
+|-----------|:-----:|:----:|
+| Adapter   |       |      |
+| Bridge    |       |      |
+| Composite |   ✅   |  ✅   |
+| Decorator |       |      |
+| Facade    |   ✅   |  ✅   |
+| Flyweight |       |      |
+| Proxy     |       |      |
 
 ### Behavioral
-| Pattern | Swift | Dart |
-|---------|:-----:|:----:|
-| Chain of Responsibility | | |
-| Command | ✅ | ✅ |
-| Iterator | | |
-| Mediator | | |
-| Memento | | |
-| Observer | ✅ | ✅ |
-| State | ✅ | ✅ |
-| Strategy | ✅ | ✅ |
-| Template Method | ✅ | ✅ |
-| Visitor | | |
+
+| Pattern                 | Swift | Dart |
+|-------------------------|:-----:|:----:|
+| Chain of Responsibility |       |      |
+| Command                 |   ✅   |  ✅   |
+| Iterator                |       |      |
+| Mediator                |       |      |
+| Memento                 |       |      |
+| Observer                |   ✅   |  ✅   |
+| State                   |   ✅   |  ✅   |
+| Strategy                |   ✅   |  ✅   |
+| Template Method         |   ✅   |  ✅   |
+| Visitor                 |       |      |
 
 > ✅ = implemented &nbsp;|&nbsp; _(blank)_ = coming soon
 
@@ -69,14 +74,18 @@ DesignPatterns-Swift-Dart/
 ## Getting Started
 
 ### Swift
+
 Requires Xcode or Swift toolchain (Swift 5.5+).
+
 ```bash
 cd swift
 swift run
 ```
 
 ### Dart
+
 Requires [Dart SDK](https://dart.dev/get-dart) (Dart 3+).
+
 ```bash
 cd dart/design_patterns
 dart pub get
