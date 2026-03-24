@@ -58,7 +58,7 @@ DesignPatterns-Swift-Dart/
 |-------------------------|:-----:|:----:|
 | Chain of Responsibility |       |      |
 | Command                 |   ✅   |  ✅   |
-| Iterator                |       |      |
+| Iterator                |   ✅   |  ✅   |
 | Mediator                |       |      |
 | Memento                 |       |      |
 | Observer                |   ✅   |  ✅   |
