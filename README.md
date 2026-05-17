@@ -56,7 +56,7 @@ DesignPatterns-Swift-Dart/
 
 | Pattern                 | Swift | Dart |
 |-------------------------|:-----:|:----:|
-| Chain of Responsibility |   ✅   |      |
+| Chain of Responsibility |   ✅   |  ✅   |
 | Command                 |   ✅   |  ✅   |
 | Iterator                |   ✅   |  ✅   |
 | Mediator                |       |      |
