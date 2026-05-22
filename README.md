@@ -44,7 +44,7 @@ DesignPatterns-Swift-Dart/
 
 | Pattern   | Swift | Dart |
 |-----------|:-----:|:----:|
-| Adapter   |       |      |
+| Adapter   |   ✅   |  ✅   |
 | Bridge    |       |      |
 | Composite |   ✅   |  ✅   |
 | Decorator |       |      |
