@@ -50,7 +50,7 @@ DesignPatterns-Swift-Dart/
 | Decorator |       |      |
 | Facade    |   ✅   |  ✅   |
 | Flyweight |       |      |
-| Proxy     |       |      |
+| Proxy     |   ✅   |  ✅   |
 
 ### Behavioral
 
