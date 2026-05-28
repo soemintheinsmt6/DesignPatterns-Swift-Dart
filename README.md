@@ -36,7 +36,7 @@ DesignPatterns-Swift-Dart/
 |------------------|:-----:|:----:|
 | Singleton        |       |      |
 | Factory Method   |   ✅   |  ✅   |
-| Abstract Factory |       |      |
+| Abstract Factory |   ✅   |  ✅   |
 | Builder          |       |      |
 | Prototype        |       |      |
 
